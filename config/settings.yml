@@ -1,0 +1,3 @@
+plugins:
+  bulk_messages_enabled:
+    default: true

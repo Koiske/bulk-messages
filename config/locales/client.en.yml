@@ -1,0 +1,11 @@
+en:
+  js:
+    discourse_bulk_messages:
+      title: "Bulk Message"
+      anonymous: "Anonymous (Use system user)"
+      closed: "Closed"
+      pm_body: "Message Body"
+      pm_group: "Group Name to include in all messages"
+      pm_title: "Message Title"
+      pm_users: "Users to PM (Separate by new lines)"
+      submit: "Send Bulk Message"

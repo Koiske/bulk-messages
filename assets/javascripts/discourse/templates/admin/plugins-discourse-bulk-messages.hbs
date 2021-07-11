@@ -1,0 +1,45 @@
+<div class="control-group">
+  <div class="controls">
+    <label>{{i18n "discourse_bulk_messages.pm_users"}}</label>
+    {{textarea value=pm_users}}
+  </div>
+
+  <div class="controls">
+    <label>{{i18n "discourse_bulk_messages.pm_group"}}</label>
+    {{input value=pm_group}}
+  </div>
+
+  <div class="controls">
+    <label>{{i18n "discourse_bulk_messages.pm_title"}}</label>
+    {{input value=pm_title}}
+  </div>
+
+  <div class="controls">
+    <label>{{i18n "discourse_bulk_messages.pm_body"}}</label>
+    {{d-editor value=pm_body}}
+  </div>
+
+  <div class="controls">
+    <label>
+      {{i18n "discourse_bulk_messages.anonymous"}}
+      {{input type="checkbox" checked=anonymous}}
+    </label>
+  </div>
+
+  <div class="controls">
+    <label>
+      {{i18n "discourse_bulk_messages.closed"}}
+      {{input type="checkbox" checked=closed}}
+    </label>
+  </div>
+
+  <div class="controls">
+    {{d-button class="btn-default" action=(action "action") label="discourse_bulk_messages.submit"}}
+  </div>
+
+  {{conditional-loading-spinner condition=loading}}
+
+  {{#if success}}
+    <p>Successfully queued bulk message. Check your inbox later for a report.</p>
+  {{/if}}
+</div>
